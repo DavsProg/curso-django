@@ -5,3 +5,9 @@ def saludo(request):
 
 def despedida(request):
     return HttpResponse("hasta luego")
+
+def adulto (rquest, edad):
+    if (edad >= 18):
+        return HttpResponse("Eres mayor de edad")
+    else:
+        return HttpResponse("No eres mayor de edad")
